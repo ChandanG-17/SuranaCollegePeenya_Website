@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>surana college Alumini webpage</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+  
+    
+    <link rel="stylesheet" href="home.css" />
+    <script src="./home.js"></script>
+    <style>
+      /* Full-width input fields */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #04aa6d;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+
+      /* Center the image and position the close button */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+
+      .container {
+        padding: 16px;
+      }
+
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        padding-top: 20px;
+      }
+
+      /* Modal Content/Box */
+      .modal-content {
+        width: 400px;
+        background-color: #fefefe;
+        margin: 4% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      /* The Close Button (x) */
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
+      }
+
+      /* Add Zoom Animation */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s;
+      }
+
+      @-webkit-keyframes animatezoom {
+        from {
+          -webkit-transform: scale(0);
+        }
+        to {
+          -webkit-transform: scale(1);
+        }
+      }
+
+      @keyframes animatezoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+      .container-log{
+        margin-top: -6%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="bgimg" style="background-image: url(img/img-3.jpeg);">
+     <section class="main" style="background-image: url(images/hero-bg.png)">
+       <nav>
+        <a href="#" class="logo">
+          <img src="img/clglogo.jpg"/>
+        </a>
+        
+        <label class="menu-icon" for="menu-btn">
+          <span class="nav-icon"></span>
+        </label>
+        <ul class="menu" style="border-radius: 5px">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Office.html">Fraternities</a></li>
+          <li><a href="./gallery/gallery.html">Gallery</a></li>
+          <li><a href="alumni_gallery.html">Alumini</a></li>
+          <li><a href="testimonial.html">Testimonial</a></li>
+          <li><a href="help_desk.html">Alumini Assist</a></li>
+          <li><a href="#footer">About</a></li>
+          <li>
+            <a
+              class="active"
+              onclick="document.getElementById('id01').style.display='block'"
+              style="width: auto; border-radius: 5px; cursor: pointer">Login</a>
+          </li>
+          <li>
+            <a
+              class="active"
+              style="width: auto; border-radius: 5px; cursor: pointer" href="form.html">Membership</a>
+          </li>
+        </ul>
+       </nav>
+
+       <!-- login modal start -->
+       <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post" style="width: 400px" >
+          <div class="imgcontainer">
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="close"
+              title="Close Modal"
+              >&times;</span
+            >
+            <p style="font-size: 22px">Alumni Login</p>
+            <hr />
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+      
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+      
+            <button type="submit" style="background-color: #04aa6d;">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+          </div>
+      
+          <!-- Social Media Login Buttons -->
+          <div class="container-log" style="text-align: center;">
+            <p style="font-size: 18px; margin: 10px 0;">Or Login With</p>
+            <button onclick="googleLogin()" style="background-color: #db4437; color: white; border: none; padding: 10px;">Login with Google</button>
+            <button onclick="instagramLogin()" style="background-color: #c32aa3; color: white; border: none; padding: 10px;">Login with Instagram</button>
+            <button onclick="linkedinLogin()" style="background-color: #0077b5; color: white; ;border: none; padding: 10px;">Login with LinkedIn</button>
+          </div>
+      
+          <div class="container" style="background-color: #f1f1f1">
+            <button
+              type="button"
+              onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn"
+            >
+              Cancel
+            </button>
+            <span class="psw"><a href="#">Register Here</a></span>
+            <span class="psw" style="margin-right: 11px"
+              ><a href="#">Forgot password?</a></span
+            >
+          </div>
+        </form>
+      </div>
+      <script>
+        function googleLogin() {
+          // Redirect to Google OAuth login
+          window.location.href = 'https://accounts.google.com/o/oauth2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email profile';
+        }
+      
+        function instagramLogin() {
+          // Redirect to Instagram OAuth login
+          window.location.href = 'https://api.instagram.com/oauth/authorize?client_id=YOUR_INSTAGRAM_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=user_profile';
+        }
+      
+        function linkedinLogin() {
+          // Redirect to LinkedIn OAuth login
+          window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=YOUR_LINKEDIN_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=r_liteprofile%20r_emailaddress';
+        }
+      </script>
+        </section>
+      <!-- login modal end  -->
+
+      <!--main-content-->
+       <div class="home-content">
+        <!--text-->
+        <div class="home-text">
+          <div class="hometxt">
+          <h1 style="color: rgba(0, 0, 0, 0.768); letter-spacing: 3px">
+            Welcome to Surana College
+          </h1>
+           
+          <h2 style="color: rgb(0, 0, 0)">
+            The purpose of college Alumini is to promise to
+            enhance their intellectual, physical, social, emotional, spiritual,
+            and college growth so that they may realize their power for good as
+            citizens
+          </h2>
+           <!-- login-btn  -->
+          <a href="./gallery/gallery.html" class="main-login" style="border-radius: 5px"
+            >Explore</a>
+          </div>
+        </div>
+        <!-- img  -->
+        <div class="home-img" style="width: 650px">
+         
+        </div>
+      </div>  
+
+  
+  </div>
+
+    <!-- Gallery -->
+    <section id="tranding" class="gallery-cont">
+      <div class="container">
+        <h1 class="text-center section-subheading" style="font-size: 30px;">Alumini Gallery</h1>
+        <!-- <h1 class="text-center section-heading">Tranding food</h1> -->
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img1.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">ceo</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    ROHAN
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2012</span>
+                    <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ratione.</p>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img2.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">MCA</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    KIRAN
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2014</span>
+                    <div class="description">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolor!</P>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img3.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">MCA</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    KEETHI
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2015</span>
+                    <div class="description">
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, itaque.</P>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img4.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">MCA</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    ADITHYA
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2016</span>
+                    <div class="description">
+                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, vel.</P>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img3.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">MCA</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    CHNADAN
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2018</span>
+                    <div class="description">
+                     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, autem!</P>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img2.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">MCA</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    SANJANA
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2020</span>
+                    <div class="description">
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum.</P>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../Images/img1.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">MCA</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    KOUSHIK
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>2021</span>
+                    <div class="description">
+                      <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, provident?</P>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    
+<!-- about Us -->
+<footer class="footer" id="footer">
+  <h2 class="about-head">About US</h2>
+  <div class="footer-container">
+      <div class="footer-about">
+          <h2 style="color: gold;">🎨 About Creative College</h2>
+          <p>Ignite Your Passion. Transform Your Future. At Creative College, we believe in the power of imagination. Our vibrant community nurtures artistic exploration, critical thinking, and collaboration.</p>
+      </div>
+      <div class="footer-links">
+          <h3 style="color: gold;">🌟 Connect With Us</h3>
+          <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+          </ul>
+      </div>
+      <div class="footer-quick-links">
+          <h3 style="color: gold;">🔗 Explore More</h3>
+          <ul>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Campus Life</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-newsletter">
+          <h3 style="color: gold;">📩 Stay Inspired</h3>
+          <p>Join our newsletter for the latest updates, workshops, and opportunities to unleash your creativity!</p>
+          <a href="#" class="subscribe-btn">Subscribe Now</a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>📍 123 Creative Avenue, Imagination City, ST 12345 | 📞 0123456789 | 📧 peenya.Suranacollege.edu.in</p>
+      <p>✨ “Creativity takes courage.” – Henri Matisse</p>
+      <p>🌐 Accessibility | Privacy Policy | Terms of Service</p>
+  </div>
+</footer>
+
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Images with Hover Effect</title>
+    <link rel="stylesheet" href="./gallery.css">
+
+</head>
+<body> 
+    <div class="main-cont">
+    <div class="container">
+            <h3>Year 2020 </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam exercitationem quasi cumque?</p>
+             <button onclick="openModal()">View all</button>
+        <div class="card card1"><img src="../img/img1.avif" alt="Image 1"></div>
+        <div class="card card2"><img src="../img/img2.avif" alt="Image 2"></div>
+        <div class="card card3"><img src="../img/img3.avif" alt="Image 3"></div>
+        <div class="card card4"><img src="../img/img4.avif" alt="Image 4"></div>
+        <div class="card card5"><img src="../img/img5.avif" alt="Image 5"></div>
+        <div class="card card6"><img src="../img/img6.avif" alt="Image 6"></div>
+        <div class="card card7"><img src="../img/img7.avif" alt="Image 7"></div>
+        <div class="card card8"><img src="../img/img8.avif" alt="Image 8"></div>
+        <div class="card card9"><img src="../img/img9.avif" alt="Image 9"></div>
+        <div class="card card10"><img src="../img/img10.avif" alt="Image 10"></div>
+        <div class="card card11"><img src="../img/img11.avif" alt="Image 11"></div>
+        <div class="card card12"><img src="../img/img12.avif" alt="Image 12"></div>
+        <div class="card card13"><img src="../img/img13.avif" alt="Image 13"></div>
+    </div>
+    <div class="container1">
+        <h3>Year 2021 </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptatibus itaque quod.</p>
+         <button onclick="openModal()">View all</button>
+    <div class="card card1"><img src="../img/img1.avif" alt="Image 1"></div>
+    <div class="card card2"><img src="../img/img2.avif" alt="Image 2"></div>
+    <div class="card card3"><img src="../img/img3.avif" alt="Image 3"></div>
+    <div class="card card4"><img src="../img/img4.avif" alt="Image 4"></div>
+    <div class="card card5"><img src="../img/img5.avif" alt="Image 5"></div>
+    <div class="card card6"><img src="../img/img6.avif" alt="Image 6"></div>
+    <div class="card card7"><img src="../img/img7.avif" alt="Image 7"></div>
+    <div class="card card8"><img src="../img/img8.avif" alt="Image 8"></div>
+    <div class="card card9"><img src="../img/img9.avif" alt="Image 9"></div>
+    <div class="card card10"><img src="../img/img10.avif" alt="Image 10"></div>
+    <div class="card card11"><img src="../img/img11.avif" alt="Image 11"></div>
+    <div class="card card12"><img src="../img/img12.avif" alt="Image 12"></div>
+    <div class="card card13"><img src="../img/img13.avif" alt="Image 13"></div>
+</div>
+<div class="container2">
+    <h3>Year 2022 </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque distinctio commodi!</p>
+     <button onclick="openModal()">View all</button>
+<div class="card card1"><img src="../img/img1.avif" alt="Image 1"></div>
+<div class="card card2"><img src="../img/img2.avif" alt="Image 2"></div>
+<div class="card card3"><img src="../img/img3.avif" alt="Image 3"></div>
+<div class="card card4"><img src="../img/img4.avif" alt="Image 4"></div>
+<div class="card card5"><img src="../img/img5.avif" alt="Image 5"></div>
+<div class="card card6"><img src="../img/img6.avif" alt="Image 6"></div>
+<div class="card card7"><img src="../img/img7.avif" alt="Image 7"></div>
+<div class="card card8"><img src="../img/img8.avif" alt="Image 8"></div>
+<div class="card card9"><img src="../img/img9.avif" alt="Image 9"></div>
+<div class="card card10"><img src="../img/img10.avif" alt="Image 10"></div>
+<div class="card card11"><img src="../img/img11.avif" alt="Image 11"></div>
+<div class="card card12"><img src="../img/img12.avif" alt="Image 12"></div>
+<div class="card card13"><img src="../img/img13.avif" alt="Image 13"></div>
+</div>
+<div class="container3">
+    <h3>Year 2023 </h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam nemo doloremque?</p>
+     <button onclick="openModal()">View all</button>
+<div class="card card1"><img src="../img/img1.avif" alt="Image 1"></div>
+<div class="card card2"><img src="../img/img2.avif" alt="Image 2"></div>
+<div class="card card3"><img src="../img/img3.avif" alt="Image 3"></div>
+<div class="card card4"><img src="../img/img4.avif" alt="Image 4"></div>
+<div class="card card5"><img src="../img/img5.avif" alt="Image 5"></div>
+<div class="card card6"><img src="../img/img6.avif" alt="Image 6"></div>
+<div class="card card7"><img src="../img/img7.avif" alt="Image 7"></div>
+<div class="card card8"><img src="../img/img8.avif" alt="Image 8"></div>
+<div class="card card9"><img src="../img/img9.avif" alt="Image 9"></div>
+<div class="card card10"><img src="../img/img10.avif" alt="Image 10"></div>
+<div class="card card11"><img src="../img/img11.avif" alt="Image 11"></div>
+<div class="card card12"><img src="../img/img12.avif" alt="Image 12"></div>
+<div class="card card13"><img src="../img/img13.avif" alt="Image 13"></div>
+</div>
+    </div>
+
+    <div class="modal" id="imageModal" onclick="closeModalOnOutsideClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <img src="../img/img1.avif" alt="Image 1">
+            <img src="../img/img2.avif" alt="Image 2">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img1.avif" alt="Image 1">
+            <img src="../img/img2.avif" alt="Image 2">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img1.avif" alt="Image 1">
+            <img src="../img/img2.avif" alt="Image 2">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">      
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img1.avif" alt="Image 1">
+            <img src="../img/img2.avif" alt="Image 2">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img5.avif" alt="Image 5">
+            <img src="../img/img3.avif" alt="Image 3">
+            <img src="../img/img4.avif" alt="Image 4">
+            <img src="../img/img5.avif" alt="Image 5">
+
+        </div>
+    </div>
+ 
+    <script>
+        function openModal() {
+            document.getElementById("imageModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+         function closeModalOnOutsideClick(event) {
+            if (event.target === document.getElementById("imageModal")) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
