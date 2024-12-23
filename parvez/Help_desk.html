@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Help Desk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto py-10">
+        <h1 class="text-3xl font-bold text-center mb-6">Alumni Help Desk</h1>
+        <div class="bg-blue-600 text-white rounded-t-lg p-6 text-center">
+            <h2 class="text-2xl font-bold mb-2">Manage alumni related queries</h2>
+            <p>Your go-to destination for all the alumni related queries</p>
+        </div>
+        <div class="bg-white p-6 rounded-b-lg shadow-md">
+            <p class="text-lg font-semibold mb-4">Please select the service you would like to avail</p>
+            <form>
+                <div class="mb-4">
+                    <label for="service" class="block text-gray-700 font-semibold mb-2">Service Required<span class="text-red-500">*</span></label>
+                    <select id="service" class="w-full border border-gray-300 rounded-lg p-2">
+                        <option>Select Service</option>
+                        <option>Contact</option>
+                        <option>Wish to Recruit</option>
+                        <option>Vounlteer</option>
+                        <option>Be a Mentor</option>
+                        <option>request Transition</option>
+                        <option>Guest Lecture</option>
+                    </select>
+                    <p class="text-gray-500 mt-1">From the dropdown please select the service you need</p>
+                </div>
+                <button type="submit" class="bg-green-500 text-white px-6 py-2 rounded-lg">Next</button>
+            </form>
+        </div>
+    </div>
+    <div class="flex justify-center items-center mt-10 space-x-4">
+        <a href="#" class="text-blue-800"><i class="fas fa-globe"></i>Surana College</a>
+        <a href="#" class="text-blue-600"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="text-blue-400"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" class="text-blue-700"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#" class="text-red-600"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="#" class="text-pink-600"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+    <button class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg">Feedback</button>
+</body>
+</html>

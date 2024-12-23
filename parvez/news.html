@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsroom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between; /* Aligns main content and sidebar */
+            flex-wrap: wrap;
+            position: relative; /* So the sidebar can be positioned inside it */
+        }
+
+        
+        .main-content {
+            flex: 1; /* Allow main content to take up available space */
+            padding: 16px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        p {
+            color: #6b7280;
+        }
+
+        .news-article {
+            background-color: white;
+            padding: 24px;
+            margin-top: 0px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-article img {
+            width: 70%; /* Reduce image width to 70% */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .post-date {
+            color: #6b7280;
+            margin-top: 8px;
+        }
+
+        .news-description {
+            color: #4a5568;
+            margin-top: 16px;
+        }
+
+        .btn-read-more {
+            margin-top: 16px;
+            padding: 8px 16px;
+            border: 1px solid #63b3ed;
+            color: #63b3ed;
+            border-radius: 9999px;
+            cursor: pointer;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-read-more:hover {
+            background-color: #63b3ed;
+            color: white;
+        }
+
+        /* Archive Sidebar */
+        .archive-sidebar {
+            width: 300px; /* Fixed width for the sidebar */
+            background-color: #f7fafc; /* Dark white background */
+            padding: 16px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .archive-sidebar h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .archive-sidebar ul {
+            margin-top: 16px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .archive-sidebar ul li {
+            margin-top: 8px;
+        }
+
+        .archive-sidebar ul li a {
+            color: #4a5568;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .archive-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            /* For smaller screens (mobile/tablet), stack items vertically */
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-content {
+                width: 100%;
+            }
+
+            .archive-sidebar {
+                width: 100%; /* Sidebar takes full width */
+                margin-top: 32px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <h1>Newsroom</h1>
+            <p>All the News and Updates from Surana</p>
+            
+            <!-- News Article 1 -->
+            <div class="news-article">
+                <img src="3.jpg" alt="Mock Interview Event">
+                <h2>The Office of Career Advancement and Networking Hosts Mock Group Discussion and Personal Interview Session – 22 June, 2024</h2>
+                <p class="post-date">Posted on 18th Dec, 2024</p>
+                <p class="news-description">The Office of Career Advancement and Networking at Alliance University organized a Mock Group discussion and Personal Interview Session for MBA students from the batch of January 2023–25. The event aimed to enhance students' interview preparedness and provide practical exposure to real-time corporate interview scenarios...</p>
+                <button class="btn-read-more">Read More</button>
+            </div>
+
+            <!-- News Article 2 -->
+            <div class="news-article">
+                <img src="3.jpg" alt="Mock Interview Event">
+                <h2>The Office of Career Advancement and Networking Hosts Mock Group Discussion and Personal Interview Session – 22 June, 2024</h2>
+                <p class="post-date">Posted on 18th Dec, 2024</p>
+                <p class="news-description">The Office of Career Advancement and Networking at Alliance University organized a Mock Group discussion and Personal Interview Session for MBA students from the batch of January 2023–25. The event aimed to enhance students' interview preparedness and provide practical exposure to real-time corporate interview scenarios...</p>
+                <button class="btn-read-more">Read More</button>
+            </div>
+
+            <!-- News Article 3 -->
+            <div class="news-article">
+                <img src="3.jpg" alt="Mock Interview Event">
+                <h2>The Office of Career Advancement and Networking Hosts Mock Group Discussion and Personal Interview Session – 22 June, 2024</h2>
+                <p class="post-date">Posted on 18th Dec, 2024</p>
+                <p class="news-description">The Office of Career Advancement and Networking at Alliance University organized a Mock Group discussion and Personal Interview Session for MBA students from the batch of January 2023–25. The event aimed to enhance students' interview preparedness and provide practical exposure to real-time corporate interview scenarios...</p>
+                <button class="btn-read-more">Read More</button>
+            </div>
+        </div>
+
+        <!-- Archive Sidebar -->
+        <div class="archive-sidebar">
+            <h2>Archive</h2>
+            <ul>
+                <li><a href="#">December 2024 (1)</a></li>
+                <li><a href="#">November 2024 (1)</a></li>
+                <li><a href="#">July 2024 (11)</a></li>
+                <li><a href="#">November 2021 (5)</a></li>
+                <li><a href="#">October 2021 (2)</a></li>
+                <li><a href="#">September 2021 (7)</a></li>
+                <li><a href="#">June 2021 (1)</a></li>
+                <li><a href="#">May 2021 (123)</a></li>
+                <li><a href="#">September 2018 (2)</a></li>
+                <li><a href="#">August 2018 (2)</a></li>
+                <li><a href="#">July 2018 (9)</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
