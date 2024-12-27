@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>About Us - Surana College Alumni Association</title>
+    
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            const aboutContainer = document.querySelector('.about-container');
+
+            aboutContainer.classList.add('hidden');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function resetAbout() {
+            const sections = document.querySelectorAll('.section');
+            const aboutContainer = document.querySelector('.about-container');
+
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            aboutContainer.classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="about.html">Who We Are</a>
+                <ul>
+                    <li><a href="javascript:resetAbout()">Who We Are</a></li>
+                    <li><a href="javascript:showSection('History')">History</a></li>
+                    <li><a href="javascript:showSection('Vision')">Vision & Mission</a></li>
+                    <li><a href="javascript:showSection('Leadership')">Leadership</a></li>
+                    <li><a href="javascript:showSection('Accreditations')">Accreditations</a></li>
+                    <li><a href="javascript:showSection('Achievements')">Achievements</a></li>
+                    <li><a href="javascript:showSection('ContactUs')">Contact Us</a></li>
+                </ul>
+            </li>
+            <li><a href="Alumni.html">Alumni</a>
+                <ul>
+                    <li><a href="#" class="dropdown-item" data-target="members">Members</a></li>
+                    <li><a href="#" class="dropdown-item" data-target="testimonials">Alumni Testimonials</a></li>
+                    <li><a href="#" class="dropdown-item" data-target="entrepreneurs">Alumni Entrepreneurs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Reunions</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- About Container -->
+        <div class="about-container">
+            <h2>Who We Are</h2>
+            <div class="images">
+                <img src="image1.jpg" alt="Surana College Campus">
+                <img src="image2.jpg" alt="Alumni Meet">
+                <img src="image3.jpg" alt="Event Highlights">
+            </div>
+            <p>Welcome to the Surana College Alumni Association! Our association serves as a bridge between the illustrious alumni and the institution, Our vision is to empower individuals through knowledge and learning... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor distinctio deserunt neque, est non delectus similique repellat dignissimos fugiat asperiores, quam officiis suscipit quos, quisquam eius a ipsa temporibus.
+                Veniam similique quis ducimus, quia necessitatibus perspiciatis sed recusandae nostrum optio dolorem ipsum quaerat, distinctio ipsa vitae praesentium officiis quos maxime iste, voluptate itaque sapiente illum est nam? Nisi, eligendi?
+                Quidem inventore perspiciatis ipsa magni reprehenderit, pariatur exercitationem, magnam et, harum facilis molestias soluta. Nobis odit omnis deleniti id eveniet doloremque dolor accusamus debitis expedita. Expedita adipisci illum ipsam rem!
+                Possimus fugit ratione sit numquam beatae odit doloribus molestiae, hic sequi voluptatum id culpa, incidunt rem dolorem ad, itaque nam exercitationem sunt mollitia minima perferendis maxime eveniet laudantium. Dignissimos, exercitationem?
+                Asperiores totam vero voluptates doloremque esse, fugit dolorem cum earum tenetur ipsum nam, at voluptate dolores recusandae voluptatem blanditiis a natus maxime repellendus. Sunt est atque ipsa optio, accusamus necessitatibus.
+                Nam saepe vero fuga dolor dolore commodi soluta accusamus blanditiis distinctio. Vel officia autem, ipsa quos ut id nesciunt maiores, dicta assumenda quisquam debitis, tenetur temporibus ducimus! Ullam, corporis quae.
+                Laborum, molestiae et similique veritatis perferendis autem voluptatibus obcaecati rerum iure? Optio dicta illo dolorum rem eos quod est facere, error totam inventore harum officiis! Dolor, sunt. Nulla, alias harum.
+                Animi voluptas vel, sit evenem. Quam officiis ipsa suscipit dolorum repellat commodi distinctio, aperiam expedita? Corrupti enim aperiam dignissimos eligendi possimus, aspernatur delectus. Voluptatibus, fugit sequi!
+                Laborum alias impedit vitae, officia sequi facere harum recusandae? Beatae quos dolor, sunt a illum eos veniam dolorum quis officiis perspiciatis in at quia! Nostrum molestias aliquid iusto porro in?
+                Alias, et! Incidunt possimus ad consequuntur ut qui id similique deserunt beatae. Quasi ad ratione culpa molestiae adipisci in quae velit blanditiis nesciunt commodi? Adipisci doloribus optio illum animi harum?
+                Quisquam, ullam nihil maxime, ipsum magni commodi voluptatum blanditiis, error ipsa dicta quis doloribus. Fugit provident explicabo perspiciatis laudantium, harum quaerat facilis similique dolore saepe quo quae pariatur, amet reiciendis!
+                Quo enim voluptatem dolorum fugit magnam nesciunt debitis assumenda! Itaque sapiente dolorem quia hic. Expedita excepturi laudantium ullam officiis nam, porro iusto aliquam suscipit, libero, fugit vero laborum quaerat et!
+                Veniam quisquam autem tempore ut in ullam similique error laborum cupiditate voluptas iure officiis eligendi veritatis vero sequi, perferendis deserunt. Minus, recusandae. Fugit earum libero error dolorum quis, minima expedita?
+                Cum dignissimos repudiandae quod iusto quae? Vero illo, eius ratione sed quae, aspernatur aliquid repellendus ab, quos atque accusamus consectetur placeat? Iure harum at itaque eius deserunt atque ea dolor.
+                Dolore placeat sed ducimus exercitationem eius impedit quis explicabo praesentium unde expedita ullam eligendi ut temporibus minima aut itaque illo illum inventore, excepturi cumque ratione. Animi laudantium placeat corporis quia.
+                Laudantium nihil iste minima. Quod suscipit illo nulla neque sunt? fostering a lifelong relationship of mutual growth and inspiration. Through various initiatives, we aim to support alumni in their professional endeavors and involve them in the development of the college. Our mission is to cultivate a vibrant network that connects past and present students, celebrating the achievements and stories that make our community unique. Join us as we shape the future while cherishing our rich legacy!</p>
+        </div>
+
+        <!-- Sections -->
+        <div id="History" class="section">
+            <h2>History</h2>
+            <p>Surana College has a rich history of excellence in education since its inception.
+                Our vision is to empower individuals through knowledge and learning... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor distinctio deserunt neque, est non delectus similique repellat dignissimos fugiat asperiores, quam officiis suscipit quos, quisquam eius a ipsa temporibus.
+                Veniam similique quis ducimus, quia necessitatibus perspiciatis sed recusandae nostrum optio dolorem ipsum quaerat, distinctio ipsa vitae praesentium officiis quos maxime iste, voluptate itaque sapiente illum est nam? Nisi, eligendi?
+                Quidem inventore perspiciatis ipsa magni reprehenderit, pariatur exercitationem, magnam et, harum facilis molestias soluta. Nobis odit omnis deleniti id eveniet doloremque dolor accusamus debitis expedita. Expedita adipisci illum ipsam rem!
+                Possimus fugit ratione sit numquam beatae odit doloribus molestiae, hic sequi voluptatum id culpa, incidunt rem dolorem ad, itaque nam exercitationem sunt mollitia minima perferendis maxime eveniet laudantium. Dignissimos, exercitationem?
+                Asperiores totam vero voluptates doloremque esse, fugit dolorem cum earum tenetur ipsum nam, at voluptate dolores recusandae voluptatem blanditiis a natus maxime repellendus. Sunt est atque ipsa optio, accusamus necessitatibus.
+                Nam saepe vero fuga dolor dolore commodi soluta accusamus blanditiis distinctio. Vel officia autem, ipsa quos ut id nesciunt maiores, dicta assumenda quisquam debitis, tenetur temporibus ducimus! Ullam, corporis quae.
+                Laborum, molestiae et similique veritatis perferendis autem voluptatibus obcaecati rerum iure? Optio dicta illo dolorum rem eos quod est facere, error totam inventore harum officiis! Dolor, sunt. Nulla, alias harum.
+                Animi voluptas vel, sit evenem. Quam officiis ipsa suscipit dolorum repellat commodi distinctio, aperiam expedita? Corrupti enim aperiam dignissimos eligendi possimus, aspernatur delectus. Voluptatibus, fugit sequi!
+                Laborum alias impedit vitae, officia sequi facere harum recusandae? Beatae quos dolor, sunt a illum eos veniam dolorum quis officiis perspiciatis in at quia! Nostrum molestias aliquid iusto porro in?
+                Alias, et! Incidunt possimus ad consequuntur ut qui id similique deserunt beatae. Quasi ad ratione culpa molestiae adipisci in quae velit blanditiis nesciunt commodi? Adipisci doloribus optio illum animi harum?
+                Quisquam, ullam nihil maxime, ipsum magni commodi voluptatum blanditiis, error ipsa dicta quis doloribus. Fugit provident explicabo perspiciatis laudantium, harum quaerat facilis similique dolore saepe quo quae pariatur, amet reiciendis!
+                Quo enim voluptatem dolorum fugit magnam nesciunt debitis assumenda! Itaque sapiente dolorem quia hic. Expedita excepturi laudantium ullam officiis nam, porro iusto aliquam suscipit, libero, fugit vero laborum quaerat et!
+                Veniam quisquam autem tempore ut in ullam similique error laborum cupiditate voluptas iure officiis eligendi veritatis vero sequi, perferendis deserunt. Minus, recusandae. Fugit earum libero error dolorum quis, minima expedita?
+                Cum dignissimos repudiandae quod iusto quae? Vero illo, eius ratione sed quae, aspernatur aliquid repellendus ab, quos atque accusamus consectetur placeat? Iure harum at itaque eius deserunt atque ea dolor.
+                Dolore placeat sed ducimus exercitationem eius impedit quis explicabo praesentium unde expedita ullam eligendi ut temporibus minima aut itaque illo illum inventore, excepturi cumque ratione. Animi laudantium placeat corporis quia.
+                Laudantium nihil iste minima. Quod suscipit illo nulla neque sunt? ..</p>
+        </div>
+        <div id="Vision" class="section">
+            <h2>Vision & Mission</h2>
+            <p>Our vision is to empower individuals through knowledge and learning...
+                Our vision is to empower individuals through knowledge and learning... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor distinctio deserunt neque, est non delectus similique repellat dignissimos fugiat asperiores, quam officiis suscipit quos, quisquam eius a ipsa temporibus.
+                Veniam similique quis ducimus, quia necessitatibus perspiciatis sed recusandae nostrum optio dolorem ipsum quaerat, distinctio ipsa vitae praesentium officiis quos maxime iste, voluptate itaque sapiente illum est nam? Nisi, eligendi?
+                Quidem inventore perspiciatis ipsa magni reprehenderit, pariatur exercitationem, magnam et, harum facilis molestias soluta. Nobis odit omnis deleniti id eveniet doloremque dolor accusamus debitis expedita. Expedita adipisci illum ipsam rem!
+                Possimus fugit ratione sit numquam beatae odit doloribus molestiae, hic sequi voluptatum id culpa, incidunt rem dolorem ad, itaque nam exercitationem sunt mollitia minima perferendis maxime eveniet laudantium. Dignissimos, exercitationem?
+                Asperiores totam vero voluptates doloremque esse, fugit dolorem cum earum tenetur ipsum nam, at voluptate dolores recusandae voluptatem blanditiis a natus maxime repellendus. Sunt est atque ipsa optio, accusamus necessitatibus.
+                Nam saepe vero fuga dolor dolore commodi soluta accusamus blanditiis distinctio. Vel officia autem, ipsa quos ut id nesciunt maiores, dicta assumenda quisquam debitis, tenetur temporibus ducimus! Ullam, corporis quae.
+                Laborum, molestiae et similique veritatis perferendis autem voluptatibus obcaecati rerum iure? Optio dicta illo dolorum rem eos quod est facere, error totam inventore harum officiis! Dolor, sunt. Nulla, alias harum.
+                Animi voluptas vel, sit evenem. Quam officiis ipsa suscipit dolorum repellat commodi distinctio, aperiam expedita? Corrupti enim aperiam dignissimos eligendi possimus, aspernatur delectus. Voluptatibus, fugit sequi!
+                Laborum alias impedit vitae, officia sequi facere harum recusandae? Beatae quos dolor, sunt a illum eos veniam dolorum quis officiis perspiciatis in at quia! Nostrum molestias aliquid iusto porro in?
+                Alias, et! Incidunt possimus ad consequuntur ut qui id similique deserunt beatae. Quasi ad ratione culpa molestiae adipisci in quae velit blanditiis nesciunt commodi? Adipisci doloribus optio illum animi harum?
+                Quisquam, ullam nihil maxime, ipsum magni commodi voluptatum blanditiis, error ipsa dicta quis doloribus. Fugit provident explicabo perspiciatis laudantium, harum quaerat facilis similique dolore saepe quo quae pariatur, amet reiciendis!
+                Quo enim voluptatem dolorum fugit magnam nesciunt debitis assumenda! Itaque sapiente dolorem quia hic. Expedita excepturi laudantium ullam officiis nam, porro iusto aliquam suscipit, libero, fugit vero laborum quaerat et!
+                Veniam quisquam autem tempore ut in ullam similique error laborum cupiditate voluptas iure officiis eligendi veritatis vero sequi, perferendis deserunt. Minus, recusandae. Fugit earum libero error dolorum quis, minima expedita?
+                Cum dignissimos repudiandae quod iusto quae? Vero illo, eius ratione sed quae, aspernatur aliquid repellendus ab, quos atque accusamus consectetur placeat? Iure harum at itaque eius deserunt atque ea dolor.
+                Dolore placeat sed ducimus exercitationem eius impedit quis explicabo praesentium unde expedita ullam eligendi ut temporibus minima aut itaque illo illum inventore, excepturi cumque ratione. Animi laudantium placeat corporis quia.
+                Laudantium nihil iste minima. Quod suscipit illo nulla neque sunt? 
+            </p>
+        </div>
+        <div id="Leadership" class="section">
+            <h2>Leadership</h2>
+            <p>The leadership team at Surana College Alumni Association is a blend of...
+                Our vision is to empower individuals through knowledge and learning... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor distinctio deserunt neque, est non delectus similique repellat dignissimos fugiat asperiores, quam officiis suscipit quos, quisquam eius a ipsa temporibus.
+                Veniam similique quis ducimus, quia necessitatibus perspiciatis sed recusandae nostrum optio dolorem ipsum quaerat, distinctio ipsa vitae praesentium officiis quos maxime iste, voluptate itaque sapiente illum est nam? Nisi, eligendi?
+                Quidem inventore perspiciatis ipsa magni reprehenderit, pariatur exercitationem, magnam et, harum facilis molestias soluta. Nobis odit omnis deleniti id eveniet doloremque dolor accusamus debitis expedita. Expedita adipisci illum ipsam rem!
+                Possimus fugit ratione sit numquam beatae odit doloribus molestiae, hic sequi voluptatum id culpa, incidunt rem dolorem ad, itaque nam exercitationem sunt mollitia minima perferendis maxime eveniet laudantium. Dignissimos, exercitationem?
+                Asperiores totam vero voluptates doloremque esse, fugit dolorem cum earum tenetur ipsum nam, at voluptate dolores recusandae voluptatem blanditiis a natus maxime repellendus. Sunt est atque ipsa optio, accusamus necessitatibus.
+                Nam saepe vero fuga dolor dolore commodi soluta accusamus blanditiis distinctio. Vel officia autem, ipsa quos ut id nesciunt maiores, dicta assumenda quisquam debitis, tenetur temporibus ducimus! Ullam, corporis quae.
+                Laborum, molestiae et similique veritatis perferendis autem voluptatibus obcaecati rerum iure? Optio dicta illo dolorum rem eos quod est facere, error totam inventore harum officiis! Dolor, sunt. Nulla, alias harum.
+                Animi voluptas vel, sit evenem. Quam officiis ipsa suscipit dolorum repellat commodi distinctio, aperiam expedita? Corrupti enim aperiam dignissimos eligendi possimus, aspernatur delectus. Voluptatibus, fugit sequi!
+                Laborum alias impedit vitae, officia sequi facere harum recusandae? Beatae quos dolor, sunt a illum eos veniam dolorum quis officiis perspiciatis in at quia! Nostrum molestias aliquid iusto porro in?
+                Alias, et! Incidunt possimus ad consequuntur ut qui id similique deserunt beatae. Quasi ad ratione culpa molestiae adipisci in quae velit blanditiis nesciunt commodi? Adipisci doloribus optio illum animi harum?
+                Quisquam, ullam nihil maxime, ipsum magni commodi voluptatum blanditiis, error ipsa dicta quis doloribus. Fugit provident explicabo perspiciatis laudantium, harum quaerat facilis similique dolore saepe quo quae pariatur, amet reiciendis!
+                Quo enim voluptatem dolorum fugit magnam nesciunt debitis assumenda! Itaque sapiente dolorem quia hic. Expedita excepturi laudantium ullam officiis nam, porro iusto aliquam suscipit, libero, fugit vero laborum quaerat et!
+                Veniam quisquam autem tempore ut in ullam similique error laborum cupiditate voluptas iure officiis eligendi veritatis vero sequi, perferendis deserunt. Minus, recusandae. Fugit earum libero error dolorum quis, minima expedita?
+                Cum dignissimos repudiandae quod iusto quae? Vero illo, eius ratione sed quae, aspernatur aliquid repellendus ab, quos atque accusamus consectetur placeat? Iure harum at itaque eius deserunt atque ea dolor.
+                Dolore placeat sed ducimus exercitationem eius impedit quis explicabo praesentium unde expedita ullam eligendi ut temporibus minima aut itaque illo illum inventore, excepturi cumque ratione. Animi laudantium placeat corporis quia.
+                Laudantium nihil iste minima. Quod suscipit illo nulla neque sunt? 
+            </p>
+        </div>
+        <div id="Accreditations" class="section">
+            <h2>Accreditations</h3>
+            <p>Surana College is accredited by prestigious institutions, reflecting..
+                Our vision is to empower individuals through knowledge and learning... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor distinctio deserunt neque, est non delectus similique repellat dignissimos fugiat asperiores, quam officiis suscipit quos, quisquam eius a ipsa temporibus.
+                Veniam similique quis ducimus, quia necessitatibus perspiciatis sed recusandae nostrum optio dolorem ipsum quaerat, distinctio ipsa vitae praesentium officiis quos maxime iste, voluptate itaque sapiente illum est nam? Nisi, eligendi?
+                Quidem inventore perspiciatis ipsa magni reprehenderit, pariatur exercitationem, magnam et, harum facilis molestias soluta. Nobis odit omnis deleniti id eveniet doloremque dolor accusamus debitis expedita. Expedita adipisci illum ipsam rem!
+                Possimus fugit ratione sit numquam beatae odit doloribus molestiae, hic sequi voluptatum id culpa, incidunt rem dolorem ad, itaque nam exercitationem sunt mollitia minima perferendis maxime eveniet laudantium. Dignissimos, exercitationem?
+                Asperiores totam vero voluptates doloremque esse, fugit dolorem cum earum tenetur ipsum nam, at voluptate dolores recusandae voluptatem blanditiis a natus maxime repellendus. Sunt est atque ipsa optio, accusamus necessitatibus.
+                Nam saepe vero fuga dolor dolore commodi soluta accusamus blanditiis distinctio. Vel officia autem, ipsa quos ut id nesciunt maiores, dicta assumenda quisquam debitis, tenetur temporibus ducimus! Ullam, corporis quae.
+                Laborum, molestiae et similique veritatis perferendis autem voluptatibus obcaecati rerum iure? Optio dicta illo dolorum rem eos quod est facere, error totam inventore harum officiis! Dolor, sunt. Nulla, alias harum.
+                Animi voluptas vel, sit evenem. Quam officiis ipsa suscipit dolorum repellat commodi distinctio, aperiam expedita? Corrupti enim aperiam dignissimos eligendi possimus, aspernatur delectus. Voluptatibus, fugit sequi!
+                Laborum alias impedit vitae, officia sequi facere harum recusandae? Beatae quos dolor, sunt a illum eos veniam dolorum quis officiis perspiciatis in at quia! Nostrum molestias aliquid iusto porro in?
+                Alias, et! Incidunt possimus ad consequuntur ut qui id similique deserunt beatae. Quasi ad ratione culpa molestiae adipisci in quae velit blanditiis nesciunt commodi? Adipisci doloribus optio illum animi harum?
+                Quisquam, ullam nihil maxime, ipsum magni commodi voluptatum blanditiis, error ipsa dicta quis doloribus. Fugit provident explicabo perspiciatis laudantium, harum quaerat facilis similique dolore saepe quo quae pariatur, amet reiciendis!
+                Quo enim voluptatem dolorum fugit magnam nesciunt debitis assumenda! Itaque sapiente dolorem quia hic. Expedita excepturi laudantium ullam officiis nam, porro iusto aliquam suscipit, libero, fugit vero laborum quaerat et!
+                Veniam quisquam autem tempore ut in ullam similique error laborum cupiditate voluptas iure officiis eligendi veritatis vero sequi, perferendis deserunt. Minus, recusandae. Fugit earum libero error dolorum quis, minima expedita?
+                Cum dignissimos repudiandae quod iusto quae? Vero illo, eius ratione sed quae, aspernatur aliquid repellendus ab, quos atque accusamus consectetur placeat? Iure harum at itaque eius deserunt atque ea dolor.
+                Dolore placeat sed ducimus exercitationem eius impedit quis explicabo praesentium unde expedita ullam eligendi ut temporibus minima aut itaque illo illum inventore, excepturi cumque ratione. Animi laudantium placeat corporis quia.
+                Laudantium nihil iste minima. Quod suscipit illo nulla neque sunt? .</p>
+        </div>
+        <div id="Achievements" class="section">
+            <h2>Achievements</h2>
+            <p>Over the years, the alumni and the institution have together achieved...</p>
+        </div>
+        <div id="ContactUs" class="section">
+            <h2>Contact Us</h2>
+            <p>For more information, feel free to reach out to us at alumni@surana.edu...</p>
+        </div>
+
+        <!-- Options Container -->
+        <div class="options-container">
+            <h2>Explore</h2>
+            <ul>
+                <li onclick="resetAbout()">Who We Are</li>
+                <li onclick="showSection('History')">History</li>
+                <li onclick="showSection('Vision')">Vision & Mission</li>
+                <li onclick="showSection('Leadership')">Leadership</li>
+                <li onclick="showSection('Accreditations')">Accreditations</li>
+                <li onclick="showSection('Achievements')">Achievements</li>
+                <li onclick="showSection('ContactUs')">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

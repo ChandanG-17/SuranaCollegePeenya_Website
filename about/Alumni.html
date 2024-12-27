@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Page</title>
+    <link rel="stylesheet" href="Alumni.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a>
+                <ul>
+                    <li><a href="javascript:resetAbout()">Who We Are</a></li>
+                    <li><a href="javascript:showSection('History')">History</a></li>
+                    <li><a href="javascript:showSection('Vision')">Vision & Mission</a></li>
+                    <li><a href="javascript:showSection('Leadership')">Leadership</a></li>
+                    <li><a href="javascript:showSection('Accreditations')">Accreditations</a></li>
+                    <li><a href="javascript:showSection('Achievements')">Achievements</a></li>
+                    <li><a href="javascript:showSection('ContactUs')">Contact Us</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Alumni.html">Alumni</a>
+                <ul>
+                    <li><a href="#" onclick="showSection('members')">Members</a></li>
+                    <li><a href="#" onclick="showSection('testimonials')">Alumni Testimonials</a></li>
+                    <li><a href="#" onclick="showSection('entrepreneurs')">Alumni Entrepreneurs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Reunions</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div id="members" class="alumni-section">Members Section Coming Soon!</div>
+            <div id="testimonials" class="alumni-section active">
+                <h2>Alumni Testimonials</h2>
+                <div class="alumni-testimonials">
+                    <div class="alumni-testimonial">
+                        <img src="https://via.placeholder.com/100" alt="Ashish">
+                        <h3>Ashish Mahajan</h3>
+                        <p><strong>Global Head Talent Partner</strong><br>Moengage</p>
+                        <p>Alliance helped me evolve as a true professional.</p>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div class="alumni-testimonial">
+                        <img src="https://via.placeholder.com/100" alt="Ranjana">
+                        <h3>Ranjana Sagar</h3>
+                        <p><strong>Associate Director</strong><br>Synechron</p>
+                        <p>Alliance gave me the right platform to launch my career.</p>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div id="entrepreneurs" class="alumni-section">
+                <h2>Alumni Entrepreneurs</h2>
+                <div class="alumni-entrepreneurs">
+                    <div class="alumni-entrepreneur">
+                        <img src="https://via.placeholder.com/100" alt="Vineet">
+                        <h3>Vineet Patil</h3>
+                        <p><strong>Co-Founder</strong><br>VOIZ</p>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div class="alumni-entrepreneur">
+                        <img src="https://via.placeholder.com/100" alt="Nandini">
+                        <h3>Nandini B</h3>
+                        <p><strong>Director</strong><br>Tescom Pvt Ltd</p>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-menu">
+            <div>
+                <a href="#" onclick="showSection('members')">Members</a>
+                <a href="#" onclick="showSection('testimonials')">Alumni Testimonials</a>
+                <a href="#" onclick="showSection('entrepreneurs')">Alumni Entrepreneurs</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.alumni-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
